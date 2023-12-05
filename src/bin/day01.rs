@@ -1,7 +1,7 @@
 use std::fs::read_to_string;
 
 fn main() {
-    let input = read_to_string("input/day01").unwrap();
+    let input = read_to_string("input/day01.txt").unwrap();
 
     let part1: usize = input.lines().map(calibrate).sum();
     println!("part 1: {}", part1);
