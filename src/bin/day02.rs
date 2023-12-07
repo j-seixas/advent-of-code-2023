@@ -32,7 +32,7 @@ fn parse_games(line: &str) -> Game {
 
     let sets_list = sets.split("; ");
 
-    let mut max_cubes = [0, 0, 0];
+    let mut max_cubes = vec![0, 0, 0];
     for set in sets_list {
         let set_cubes = set.split(", ");
         for cubes in set_cubes {
